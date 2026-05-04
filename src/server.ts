@@ -18,6 +18,7 @@ const app: Application = express();
 app.use(
   cors({
     origin: process.env.FRONTEND_URL || process.env.LOCAL_HOST,
+    /*  origin: "http://localhost:5173", */
     credentials: true,
   }),
 );
